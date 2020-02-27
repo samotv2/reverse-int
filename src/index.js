@@ -1,7 +1,12 @@
 module.exports = function reverse (n) {
-    var y = 0;
-for(; n; n = Math.floor(n / 10)) {
-    y *= 10;
-    y += n % 10;
-}
-console.log(y);}
+    
+    var res = 0;
+        while(n) {
+            res *= 10;
+            res = res + n % 10;
+            n= Math.floor(n/10);
+        }
+        
+             return (Math.abs(res));
+          }
+          
