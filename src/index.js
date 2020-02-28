@@ -1,15 +1,20 @@
 module.exports = function reverse (n) {
-    var res = 0;
-   
-     while( n !=0) {
-            res *= 10;
-            res += n % 10;
-            n = Math.floor(n/10);
+    const reverseInt = (n) =>
+    let str = String(n);
+    let result ='';
+    if(str[0] =='-'{
+       result = '-' +result;
+       console.log (result);}
+str= String (Math.abs(n));
+sonsole.log (str);
 
-        }
-    
+for (let i = str.length; i>0; i--){
+    console.log (result);
+    result += str[i-1];
+    console.log (result);
+}
+return Number (result);
         
-        return (Math.abs(res));
  }
              
           
